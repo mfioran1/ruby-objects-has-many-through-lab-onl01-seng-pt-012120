@@ -14,7 +14,6 @@ class Patient
   
   def appointments
     Appointment.all.each do |appointment|
-      binding.pry
       appointment.patient == self
     end
   end
